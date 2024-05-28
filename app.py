@@ -8,7 +8,7 @@ import soundfile as sf
 from io import BytesIO
 import base64
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', template_folder='templates')
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 CORS(app)
 
