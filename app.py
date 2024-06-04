@@ -14,7 +14,7 @@ CORS(app)
 
 @app.route('/')
 def main():
-    return send_from_directory('templates', 'main.html')
+    return send_from_directory('templates', 'index.html')
 
 
 @app.route('/start_recording', methods=['POST'])
